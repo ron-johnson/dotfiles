@@ -38,6 +38,7 @@ brew 'ruby-build'
 brew 'rbenv'
 brew 'tree'
 brew 'unrar'
+brew 'yarn'
 brew 'wget'
 
 cask 'alfred'
