@@ -4,6 +4,12 @@ export ZSH=$HOME/.dotfiles
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Code
 
+# Current Desk environment variables
+#export PRISMA_ENDPOINT='http://cb-de-publi-14wnokkovnhow-76353837.us-east-1.elb.amazonaws.com/currentbusiness/ronj'
+export PRISMA_ENDPOINT='http://internal-cbv2-Inter-88NTM2JA3YD0-78293553.us-east-1.elb.amazonaws.com/cbv2/ronj'
+export CLIENT_ENDPOINT='https://8cci1rykhf.execute-api.us-west-2.amazonaws.com/ronj/'
+export AWS_PROFILE='dev'
+
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
@@ -54,3 +60,6 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
